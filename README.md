@@ -26,5 +26,6 @@ https://emily-qing.github.io/OC-example/
 
 ## 隐私说明
 
-本仓库不包含密钥、API Token 或私人数据。所有角色和故事内容均为原创。
+本仓库不包含密钥、API Token 或私人数据。所有角色和故事内容均为AI生成，网页用于提交老师作业。
+
 

@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>翠梦庭阁 | 多维宇宙档案馆</title>
+<link rel="stylesheet" href="../css/main.css">
+<style>
+:root { --world-accent: #4ac878; --world-accent-dim: rgba(74, 200, 120, 0.15); }
+.world-hero { background: var(--bg-primary); }
+.world-hero .hero-bg { background: linear-gradient(135deg, #0a1a0a 0%, #0a3a1a 40%, #1a2a1a 100%); }
+.world-hero-content .world-type-badge { border-color: var(--world-accent); color: var(--world-accent); }
+.world-hero-content h1 { color: #a8e8c8; }
+.world-tab.active { border-bottom-color: var(--world-accent); color: var(--world-accent); }
+.info-card ul li::before { color: var(--world-accent); }
+</style>
+</head>
+<body>
+<canvas id="star-canvas"></canvas>
+<nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" style="text-decoration: none;">
+      <span class="logo-icon">&#x221E;</span>
+      多维宇宙档案馆
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#worlds">世界入口</a></li>
+      <li><a href="https://github.com/Emily-Qing" target="_blank">GitHub</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="world-hero">
+  <div class="hero-bg"></div>
+  <div class="world-hero-content fade-in">
+    <div class="world-type-badge">&#x2728; 异世界魔法</div>
+    <h1>翠梦庭阁</h1>
+    <p>翡翠森林深处，精灵与织梦者<br>编织着万物共鸣的古老魔法。</p>
+  </div>
+</div>
+
+<div class="world-tabs">
+  <div class="container">
+    <button class="world-tab active" data-target="overview">世界概览</button>
+    <button class="world-tab" data-target="laws">法则律法</button>
+    <button class="world-tab" data-target="geography">地域势力</button>
+    <button class="world-tab" data-target="characters">人物图鉴</button>
+    <button class="world-tab" data-target="story">主线剧情</button>
+    <button class="world-tab" data-target="gallery">世界图库</button>
+  </div>
+</div>
+
+<section id="overview" class="module-section">
+  <div class="container">
+    <a href="../index.html" class="back-button">&larr; 返回宇宙中枢</a>
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 01 / 06</div>
+      <h2>世界概览</h2>
+      <p>进入翠梦庭阁的第一印象</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card"><h4>世界名称</h4><p>翠梦庭阁 &mdash; The Emerald Dream Court</p></div>
+      <div class="info-card"><h4>世界类型</h4><p>异世界魔法 / 精灵幻想</p></div>
+      <div class="info-card"><h4>诞生背景</h4><p>世界由一棵名为「永翠之木」的远古巨树的核心力量维系。树根延伸至大地深处，枝干遮蔽天穹，所有魔法力量来源于树木的生命脉动。精灵一族是永翠之木的第一批子民。</p></div>
+      <div class="info-card"><h4>世界观基调</h4><p>梦幻、宁静、神秘。翠绿的森林、发光的河流、飘浮的岛屿，万物皆有灵。</p></div>
+      <div class="info-card"><h4>时间线状态</h4><p>翠鸣历 2.3 纪元 &mdash; 筹备中</p></div>
+      <div class="info-card"><h4>世界定位</h4><p>主宇宙治愈系世界，与暗色世界形成平衡的基调</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="laws" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 02 / 06</div>
+      <h2>世界法则 &amp; 律法规则</h2>
+      <p>翠梦庭阁的运行法则</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card highlight-rule" style="border-left-color: var(--world-accent); background: var(--world-accent-dim);">
+        <div class="info-icon">&#x2728;</div>
+        <h4>共鸣法则</h4>
+        <p>一切魔法来自与永翠之木的共鸣。生命体对自然的理解越深，共鸣越强。魔法不是学会的，而是被唤醒的。每个生灵天生拥有一种独特的「音色」——即魔法特质。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2606;</div>
+        <h4>织梦条例</h4>
+        <p>织梦者是能与永翠之木深度共鸣的精灵。他们能在梦境中编织预言、治愈灵魂伤痕。但织梦者有严格守则——不可窥探他人梦境中的阴暗面，不可将梦境信息用于私利。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2716;</div>
+        <h4>禁忌</h4>
+        <ul>
+          <li>禁止砍伐永翠之木的枝干</li>
+          <li>不可强行剥夺他人的共鸣音色</li>
+          <li>禁止在翠心湖中使用攻击性魔法</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2696;</div>
+        <h4>林间协定</h4>
+        <p>各精灵族群间和平共处的古老契约。规定了领地边界、资源分配和魔法使用的伦理准则。违反者将失去永翠之木的祝福。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="geography" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 03 / 06</div>
+      <h2>地域 &amp; 势力版图</h2>
+      <p>翠梦庭阁的地理与分布</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <h4>永翠之木</h4>
+        <p>世界的中心与生命之源。巨树直径超过数里，树冠遮蔽了四分之一的天空。其根部形成天然的洞穴城市，树干内部中空，是精灵议会的所在地。</p>
+      </div>
+      <div class="info-card">
+        <h4>翠心湖</h4>
+        <p>永翠之木根部环绕的发光湖泊。湖水呈翡翠色，夜间散发柔和的翠绿色荧光。传说每颗坠入湖中的星辰都会变成一颗精灵蛋。</p>
+      </div>
+      <div class="info-card">
+        <h4>飘浮群岛</h4>
+        <p>永翠之木的魔法力量使部分土地悬浮于空中。这些浮岛上是高阶精灵的居所和魔法工坊，通过藤蔓桥与主树干连接。</p>
+      </div>
+      <div class="info-card">
+        <h4>精灵族群</h4>
+        <ul>
+          <li><strong>翠翎族</strong> &mdash; 树冠居民，擅长飞行和风系魔法</li>
+          <li><strong>根络族</strong> &mdash; 地下居民，掌握大地和治愈之力</li>
+          <li><strong>湖光族</strong> &mdash; 翠心湖守卫者，擅长水系魔法</li>
+          <li><strong>织梦族</strong> &mdash; 梦境编织者，永翠之木的预言者</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="characters" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 04 / 06</div>
+      <h2>登场人物图鉴</h2>
+      <p>翠梦庭阁的居民</p>
+    </div>
+    <div class="character-grid fade-in">
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #4ac878, #2a8a4a);">&#x2728;</div>
+        <div class="char-name">瑟薇莉亚</div>
+        <div class="char-title">织梦族大祭司</div>
+        <span class="char-tag">主角</span>
+        <p class="char-desc">翠梦庭阁最强的织梦者。性格温柔内敛，梦境中却能看到世界的裂缝。她预感到一场来自世界之外的「灰雾」即将侵蚀永翠之木的根。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #4ac8a8, #2a8a7a);">&#x2606;</div>
+        <div class="char-name">黎风</div>
+        <div class="char-title">翠翎族巡林者</div>
+        <span class="char-tag">主角</span>
+        <p class="char-desc">性格跳脱自由的翠翎族年轻人。擅长驾驭风系魔法在树冠间穿梭。对外面的世界充满好奇，是少数不排斥与外来文明接触的精灵。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #8a7ac8, #5a4a8a);">&#x25C8;</div>
+        <div class="char-name">莫里斯</div>
+        <div class="char-title">根络族长老</div>
+        <span class="char-tag">配角</span>
+        <p class="char-desc">掌管地下根系通道的资深长老。严谨守旧，认为精灵世界不需要任何外来的改变。对瑟薇莉亚关于「灰雾」的预言持怀疑态度。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #c84a7a, #8a2a4a);">&#x2727;</div>
+        <div class="char-name">露米</div>
+        <div class="char-title">翠心湖守护幼灵</div>
+        <span class="char-tag">NPC</span>
+        <p class="char-desc">诞生于翠心湖的年轻湖光族精灵。天真烂漫，能与湖中的发光生物对话。经常在湖边捡到从梦境中飘出的记忆碎片。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 05 / 06</div>
+      <h2>主线剧情章节</h2>
+      <p>翠梦庭阁的故事</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">序章 &middot; 梦痕</div>
+      <h4>灰雾的预言</h4>
+      <p>瑟薇莉亚在一次深度织梦仪式中看到了不祥的景象——永翠之木的根部被一股来自大地深处的灰色雾气侵蚀，精灵的共鸣音色在雾中变得扭曲而微弱。她将预言报告给精灵议会，但并非所有长老都愿意相信。</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">第一章 &middot; 异音</div>
+      <h4>不协调的旋律</h4>
+      <p>黎风在巡逻时于翠梦庭阁边缘发现了一块枯萎的区域。那里的植物没有死，但它们的共鸣音色消失了，仿佛被什么东西吸走了生命力。痕迹指向地表之下。</p>
+    </div>
+    <div class="story-chapter fade-in" style="opacity: 0.6;">
+      <div class="chapter-number" style="opacity: 0.6;">[待续]</div>
+      <h4 style="opacity: 0.6;">更多章节筹备中</h4>
+      <p style="opacity: 0.6;">这个世界尚处于搭建初期，后续内容将逐步更新。</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 06 / 06</div>
+      <h2>世界图库</h2>
+      <p>翠梦庭阁的视觉存档</p>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x1F33F;</div>
+        <div class="gallery-label">永翠之木 <small>概念草图</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2728;</div>
+        <div class="gallery-label">瑟薇莉亚 <small>角色设定</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2606;</div>
+        <div class="gallery-label">翠心湖 <small>场景概念</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2726;</div>
+        <div class="gallery-label">飘浮群岛 <small>场景概念</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x1F338;</div>
+        <div class="gallery-label">织梦族图腾 <small>设定图</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x25C8;</div>
+        <div class="gallery-label">灰雾侵蚀 <small>概念</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-title">&#x221E; 多维宇宙档案馆 &mdash; 翠梦庭阁</div>
+      <p>本网站内容为原创世界观展示，未经授权禁止商用转载。</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

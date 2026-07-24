@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星落之境 | 多维宇宙档案馆</title>
+<link rel="stylesheet" href="../css/main.css">
+<style>
+:root { --world-accent: #3db8c8; --world-accent-dim: rgba(61, 184, 200, 0.15); }
+.world-hero { background: var(--bg-primary); }
+.world-hero .hero-bg { background: linear-gradient(135deg, #0a2a3a 0%, #0a4a5a 40%, #1a3a5a 100%); }
+.world-hero-content .world-type-badge { border-color: var(--world-accent); color: var(--world-accent); }
+.world-hero-content h1 { color: #c8e8f0; }
+.world-tab.active { border-bottom-color: var(--world-accent); color: var(--world-accent); }
+.info-card ul li::before { color: var(--world-accent); }
+</style>
+</head>
+<body>
+<canvas id="star-canvas"></canvas>
+<nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" style="text-decoration: none;">
+      <span class="logo-icon">&#x221E;</span>
+      多维宇宙档案馆
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#worlds">世界入口</a></li>
+      <li><a href="https://github.com/Emily-Qing" target="_blank">GitHub</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="world-hero">
+  <div class="hero-bg"></div>
+  <div class="world-hero-content fade-in">
+    <div class="world-type-badge">&#x2606; 古风修仙</div>
+    <h1>星落之境</h1>
+    <p>天穹裂变，星火坠入凡尘。<br>修行者们在破碎的星际大地上追寻飞升之道。</p>
+  </div>
+</div>
+
+<div class="world-tabs">
+  <div class="container">
+    <button class="world-tab active" data-target="overview">世界概览</button>
+    <button class="world-tab" data-target="laws">法则律法</button>
+    <button class="world-tab" data-target="geography">地域势力</button>
+    <button class="world-tab" data-target="characters">人物图鉴</button>
+    <button class="world-tab" data-target="story">主线剧情</button>
+    <button class="world-tab" data-target="gallery">世界图库</button>
+  </div>
+</div>
+
+<section id="overview" class="module-section">
+  <div class="container">
+    <a href="../index.html" class="back-button">&larr; 返回宇宙中枢</a>
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 01 / 06</div>
+      <h2>世界概览</h2>
+      <p>进入星落之境的第一印象</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <h4>世界名称</h4>
+        <p>星落之境 &mdash; The Starlight Realm</p>
+      </div>
+      <div class="info-card">
+        <h4>世界类型</h4>
+        <p>古风修仙 / 星际玄幻</p>
+      </div>
+      <div class="info-card">
+        <h4>诞生背景</h4>
+        <p>远古时代，天穹星图因一场名为「星坠之劫」的天地大劫碎裂，千万颗星辰坠入凡界，化作星陨灵脉。从此这片大地上修行者以星力为基，开启了新的修炼纪元。</p>
+      </div>
+      <div class="info-card">
+        <h4>世界观基调</h4>
+        <p>苍茫、孤寂、恢弘。山水间蕴藏星辉，凡人与修士共处同一片破碎的天空下。</p>
+      </div>
+      <div class="info-card">
+        <h4>时间线状态</h4>
+        <p>星历 3482 年 &mdash; 星陨纪末期</p>
+      </div>
+      <div class="info-card">
+        <h4>世界定位</h4>
+        <p>主宇宙核心世界之一，修行体系与星际元素融合的独特位面</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="laws" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 02 / 06</div>
+      <h2>世界法则 &amp; 律法规则</h2>
+      <p>星落之境的底层规则与文明律法</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card highlight-rule">
+        <div class="info-icon">&#x2606;</div>
+        <h4>星力法则</h4>
+        <p>修炼者以「星陨灵脉」为力量之源。每块灵脉对应天穹上一颗已坠落的星辰，灵脉的品质决定了修行者的上限。星力的强弱与天穹中仍在运行的星辰数量呈反比——星辰越少，残余星力越强。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x25CB;</div>
+        <h4>时间流速</h4>
+        <p>星落之境的时间流速是主宇宙的 1.7 倍。在此世界度过一年，主宇宙仅过去约七个月。极少数「星痕之地」时间流速更高，可达 3 倍以上。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2716;</div>
+        <h4>天地禁忌</h4>
+        <ul>
+          <li>禁止以星力直接抽取凡人生命本源</li>
+          <li>不可破坏星陨灵脉的核心结晶——灵脉碎裂将引发区域性星力风暴</li>
+          <li>飞升仪轨必须在「星落渊」进行，违者遭天地反噬</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2696;</div>
+        <h4>星盟律法</h4>
+        <p>由七大星宫共同制定的修行界公约。涵盖灵脉分配、星力交易、禁术管制和领地争端。违反者将被逐出星盟，剥夺星力使用权。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="geography" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 03 / 06</div>
+      <h2>地域 &amp; 势力版图</h2>
+      <p>星落之境的地理结构与势力分布</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <h4>碎星大陆</h4>
+        <p>主大陆，因星坠之劫被劈裂为七块浮岛。每块浮岛由一座星宫统治，称为「七星域」。浮岛之间以星辉桥连接，桥体在夜间最为稳固。</p>
+      </div>
+      <div class="info-card">
+        <h4>星落渊</h4>
+        <p>碎星大陆中央的深渊裂缝，传说中第一颗坠落星辰的撞击点。这里是飞升仪轨的唯一合法场所，深渊中涌动的星力浓度是外界的百倍。</p>
+      </div>
+      <div class="info-card">
+        <h4>雾隐海</h4>
+        <p>环绕碎星大陆的星辉雾海。雾中含有微量星力，长期航行可增强修为，但也容易迷失方向。海底沉睡著远古星兽的遗骸。</p>
+      </div>
+      <div class="info-card">
+        <h4>七大星宫</h4>
+        <ul>
+          <li><strong>天枢宫</strong> &mdash; 星盟之首，掌管律法与审判</li>
+          <li><strong>天璇宫</strong> &mdash; 灵脉勘探与星力研究</li>
+          <li><strong>天玑宫</strong> &mdash; 修行教育与典籍存档</li>
+          <li><strong>天权宫</strong> &mdash; 星力贸易与灵脉交易</li>
+          <li><strong>玉衡宫</strong> &mdash; 军事防卫与边境巡查</li>
+          <li><strong>开阳宫</strong> &mdash; 禁术监管与星力执法</li>
+          <li><strong>摇光宫</strong> &mdash; 天象观测与星图测绘</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>无星之地</h4>
+        <p>七星域之外的荒原区域，灵脉枯竭，星力稀薄。这里是流放者和叛逃修士的聚集地，也是远古遗迹的主要分布区。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="characters" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 04 / 06</div>
+      <h2>登场人物图鉴</h2>
+      <p>星落之境的众生相</p>
+    </div>
+    <div class="character-grid fade-in">
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #3db8c8, #2a7a8a);">&#x2606;</div>
+        <div class="char-name">凌星阙</div>
+        <div class="char-title">天枢宫星主</div>
+        <span class="char-tag">主角</span>
+        <p class="char-desc">七星宫之首，星盟最高裁决者。天生星力亲和体，却因一场意外丧失了部分星脉。沉默寡言，内心怀有对「星坠之劫」真相的执念追寻。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #4ac8a8, #2a8a7a);">&#x2726;</div>
+        <div class="char-name">云织星</div>
+        <div class="char-title">天璇宫首席星纹师</div>
+        <span class="char-tag">主角</span>
+        <p class="char-desc">灵脉勘探天才，能通过触摸感知灵脉的历史记忆。性格活泼，好奇心极强，擅长绘制星纹图谱。与凌星阙是少年时代的旧识。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #c8784a, #8a5a2a);">&#x25C6;</div>
+        <div class="char-name">九幽冥</div>
+        <div class="char-title">无星之地暗影领主</div>
+        <span class="char-tag">反派</span>
+        <p class="char-desc">曾是天权宫天才，因在星力实验中触及禁忌而被流放。在无星之地建立暗影势力，致力于打破星盟对灵脉的垄断。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #c8a84a, #8a7a2a);">&#x25C7;</div>
+        <div class="char-name">北辰望</div>
+        <div class="char-title">玉衡宫镇守将军</div>
+        <span class="char-tag">配角</span>
+        <p class="char-desc">七星域军事统领，忠诚而刻板。坚信星盟秩序是维持世界稳定的唯一方式。对凌星阙既有敬重也有防备。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #8a7ac8, #5a4a8a);">&#x2727;</div>
+        <div class="char-name">星璇老人</div>
+        <div class="char-title">摇光宫隐世长者</div>
+        <span class="char-tag">NPC</span>
+        <p class="char-desc">现存最年长的星图师，据说是唯一目睹过「星坠之劫」真相的活证人。年迈沉默，极少开口，只在星图异常时显现神迹。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #4a7ac8, #2a4a8a);">&#x2605;</div>
+        <div class="char-name">沧琉</div>
+        <div class="char-title">雾隐海守护灵</div>
+        <span class="char-tag">特殊生灵</span>
+        <p class="char-desc">雾隐海中诞生的星力聚合体，形态不定。拥有操纵星辉雾海的能力，对进入海渊的外来者有极高的警惕。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 05 / 06</div>
+      <h2>主线剧情章节</h2>
+      <p>以时间为序的故事编年</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">序章 &middot; 星陨</div>
+      <h4>第一颗坠落的星</h4>
+      <p>凌星阙在例行巡视天穹时发现一颗星图之外的暗星正在逼近。摇光宫的星图仪同时发出三千年来第一次异常警报。这颗暗星的出现，揭开了「星坠之劫」背后不为人知的真相。</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">第一章 &middot; 裂痕</div>
+      <h4>雾隐海的低语</h4>
+      <p>云织星在勘探雾隐海边缘灵脉时，发现了一处被星辉迷雾隐藏的古代遗迹。遗迹中保存的星纹记录显示，三千年前的那场「星坠之劫」或许并非天灾，而是人为。</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">第二章 &middot; 暗流</div>
+      <h4>无星之地的密谋</h4>
+      <p>九幽冥的暗影势力开始频繁活动，多次劫掠天璇宫的灵脉运输队。玉衡宫奉命追查，却在无星之地边境遭遇伏击。北辰望怀疑星盟内部有人向九幽冥通风报信。</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number" style="color: var(--text-muted);">[待续]</div>
+      <h4 style="opacity: 0.5;">更多章节筹备中</h4>
+      <p style="opacity: 0.5;">剧情仍在创作中，后续章节将陆续更新。</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 06 / 06</div>
+      <h2>世界图库</h2>
+      <p>星落之境的视觉存档</p>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2728;</div>
+        <div class="gallery-label">七星域全景 <small>概念草图</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2606;</div>
+        <div class="gallery-label">凌星阙人设 <small>角色设定</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2726;</div>
+        <div class="gallery-label">星落渊场景 <small>场景概念</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2727;</div>
+        <div class="gallery-label">星辉桥 <small>场景概念</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x25C6;</div>
+        <div class="gallery-label">九幽冥人设 <small>角色设定</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2605;</div>
+        <div class="gallery-label">雾隐海 <small>场景概念</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-title">&#x221E; 多维宇宙档案馆 &mdash; 星落之境</div>
+      <p>本网站内容为原创世界观展示，未经授权禁止商用转载。</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多维宇宙档案馆 | Multiverse Archive</title>
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<canvas id="star-canvas"></canvas>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="nav-logo">
+      <span class="logo-icon">&#x221E;</span>
+      多维宇宙档案馆
+    </div>
+    <ul class="nav-links">
+      <li><a href="#worlds">世界入口</a></li>
+      <li><a href="#updates">宇宙公告</a></li>
+      <li><a href="https://github.com/Emily-Qing" target="_blank">GitHub</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-content fade-in">
+    <div class="hero-badge">&#x2606; Multiverse Archive</div>
+    <h1 class="hero-title">多维宇宙档案馆</h1>
+    <p class="hero-slogan">
+      在无数平行世界的缝隙中，每一粒星辰都是一段未被诉说的史诗。<br>
+      欢迎翻阅宇宙卷宗。
+    </p>
+    <p class="hero-subtitle" style="color: var(--text-muted); font-size: 0.9rem; margin-top: 8px;">
+      由无数独立平行小世界构成的多维集群 &mdash; 各世界法则、文明、故事相互独立
+    </p>
+  </div>
+  <div class="scroll-indicator">
+    <span>SCROLL</span>
+    <div class="line"></div>
+  </div>
+</section>
+
+<section id="worlds" class="world-grid-section">
+  <div class="container">
+    <h2 class="section-title fade-in">世界入口</h2>
+    <p class="section-subtitle fade-in">选择一个世界，踏入它的故事</p>
+    <div class="world-grid">
+      <a href="worlds/starlight-realm.html" class="world-card fade-in" style="--card-gradient: linear-gradient(135deg, #0a2a3a, #1a4a5a);">
+        <div class="card-bg" style="background: linear-gradient(135deg, #0a2a3a 0%, #1a6a7a 50%, #0a2a3a 100%);"></div>
+        <div class="card-content">
+          <span class="card-tag" style="border-color: var(--accent-teal); color: var(--accent-teal);">古风修仙</span>
+          <h3 class="card-title">星落之境</h3>
+          <p class="card-brief">天穹裂变，星火坠入凡尘。修行者们在这片破碎的星际大地上追寻飞升之道。</p>
+          <div class="card-status"><span class="dot" style="background: #4ade80;"></span>持续更新</div>
+        </div>
+      </a>
+      <a href="worlds/rust-era.html" class="world-card fade-in" style="--card-gradient: linear-gradient(135deg, #2a1a0a, #4a2a1a);">
+        <div class="card-bg" style="background: linear-gradient(135deg, #2a1a0a 0%, #5a3a2a 50%, #2a1a0a 100%);"></div>
+        <div class="card-content">
+          <span class="card-tag" style="border-color: #c8784a; color: #c8784a;">末世科幻</span>
+          <h3 class="card-title">铁锈纪元</h3>
+          <p class="card-brief">旧世界的钢铁骨架在荒原上静默伫立，最后一城的人类在机械与辐射的夹缝中求生。</p>
+          <div class="card-status"><span class="dot" style="background: #4ade80;"></span>持续更新</div>
+        </div>
+      </a>
+      <a href="worlds/emerald-court.html" class="world-card fade-in" style="--card-gradient: linear-gradient(135deg, #0a2a1a, #1a4a2a);">
+        <div class="card-bg" style="background: linear-gradient(135deg, #0a2a1a 0%, #2a6a3a 50%, #0a2a1a 100%);"></div>
+        <div class="card-content">
+          <span class="card-tag" style="border-color: #4ac878; color: #4ac878;">异世界魔法</span>
+          <h3 class="card-title">翠梦庭阁</h3>
+          <p class="card-brief">翡翠森林深处，精灵与织梦者编织着万物共鸣的古老魔法。</p>
+          <div class="card-status"><span class="dot" style="background: #facc15;"></span>未开启</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="updates" class="announcement-section">
+  <div class="container">
+    <h2 class="section-title fade-in">宇宙公告</h2>
+    <p class="section-subtitle fade-in">档案馆更新与维护记录</p>
+    <div class="announcement-card fade-in">
+      <div class="ann-date">2026.07.24</div>
+      <div class="ann-title">档案馆正式开放</div>
+      <div class="ann-desc">多维宇宙档案馆一期建设完成，首批开放「星落之境」「铁锈纪元」两个世界入口。</div>
+    </div>
+    <div class="announcement-card fade-in">
+      <div class="ann-date">2026.07.24</div>
+      <div class="ann-title">「翠梦庭阁」世界档案筹备中</div>
+      <div class="ann-desc">第三个世界正在构建，主题为异世界魔法题材，预计后续更新。</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-title">&#x221E; 多维宇宙档案馆</div>
+      <p>本网站内容为原创世界观展示，未经授权禁止商用转载。<br>
+      二创授权请联系作者。最后更新：2026.07.24</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

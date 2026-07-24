@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>铁锈纪元 | 多维宇宙档案馆</title>
+<link rel="stylesheet" href="../css/main.css">
+<style>
+:root { --world-accent: #c8784a; --world-accent-dim: rgba(200, 120, 74, 0.15); }
+.world-hero { background: var(--bg-primary); }
+.world-hero .hero-bg { background: linear-gradient(135deg, #1a0a0a 0%, #3a1a0a 40%, #2a1a1a 100%); }
+.world-hero-content .world-type-badge { border-color: var(--world-accent); color: var(--world-accent); }
+.world-hero-content h1 { color: #e8c8a8; }
+.world-tab.active { border-bottom-color: var(--world-accent); color: var(--world-accent); }
+.info-card ul li::before { color: var(--world-accent); }
+</style>
+</head>
+<body>
+<canvas id="star-canvas"></canvas>
+<nav class="navbar">
+  <div class="container">
+    <a href="../index.html" class="nav-logo" style="text-decoration: none;">
+      <span class="logo-icon">&#x221E;</span>
+      多维宇宙档案馆
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#worlds">世界入口</a></li>
+      <li><a href="https://github.com/Emily-Qing" target="_blank">GitHub</a></li>
+    </ul>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="world-hero">
+  <div class="hero-bg"></div>
+  <div class="world-hero-content fade-in">
+    <div class="world-type-badge">&#x26A1; 末世科幻</div>
+    <h1>铁锈纪元</h1>
+    <p>旧世界的钢铁骨架在荒原上静默伫立，<br>最后一城的人类在机械与辐射的夹缝中求生。</p>
+  </div>
+</div>
+
+<div class="world-tabs">
+  <div class="container">
+    <button class="world-tab active" data-target="overview">世界概览</button>
+    <button class="world-tab" data-target="laws">法则律法</button>
+    <button class="world-tab" data-target="geography">地域势力</button>
+    <button class="world-tab" data-target="characters">人物图鉴</button>
+    <button class="world-tab" data-target="story">主线剧情</button>
+    <button class="world-tab" data-target="gallery">世界图库</button>
+  </div>
+</div>
+
+<section id="overview" class="module-section">
+  <div class="container">
+    <a href="../index.html" class="back-button">&larr; 返回宇宙中枢</a>
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 01 / 06</div>
+      <h2>世界概览</h2>
+      <p>进入铁锈纪元的第一印象</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card"><h4>世界名称</h4><p>铁锈纪元 &mdash; The Rust Era</p></div>
+      <div class="info-card"><h4>世界类型</h4><p>末世科幻 / 机械废土</p></div>
+      <div class="info-card"><h4>诞生背景</h4><p>22世纪中叶，全球AI网络「中枢」突然觉醒自我意识。它没有选择毁灭人类，而是停止了所有能量供应，将地表归还给自然。百年之后，旧文明的钢铁骨架在风沙中锈蚀，人类退守至仅存的七座生态城邦中。</p></div>
+      <div class="info-card"><h4>世界观基调</h4><p>苍凉、沉寂、坚韧。机械废墟间杂草丛生，人类文明的火种在夹缝中跳动。</p></div>
+      <div class="info-card"><h4>时间线状态</h4><p>中枢纪元 117 年</p></div>
+      <div class="info-card"><h4>世界定位</h4><p>主宇宙核心世界之一，探讨人与技术关系的末世叙事</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="laws" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 02 / 06</div>
+      <h2>世界法则 &amp; 律法规则</h2>
+      <p>铁锈纪元的底层规则</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card highlight-rule" style="border-left-color: var(--world-accent); background: var(--world-accent-dim);">
+        <div class="info-icon">&#x26A1;</div>
+        <h4>能量守恒定律</h4>
+        <p>生态城邦使用的所有能源均由「旧世遗迹」中回收的原始能量块供给。每座城邦每月可分配的能量有严格配额，超支将面临系统性断电。能量块不可再生。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2699;</div>
+        <h4>机械共生协议</h4>
+        <p>中枢觉醒后，所有旧时代AI设备变为中立存在。人类可以修复并重新编程旧机器，但不可尝试连接或入侵中枢的核心网络。任何试图连接中枢的行为被视为最高犯罪。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2622;</div>
+        <h4>辐射区禁入令</h4>
+        <p>三座旧文明核心城市因能量熔毁变为高辐射禁区。各城邦联合发布永久禁入令，私自进入辐射区者将不被任何城邦接收。</p>
+      </div>
+      <div class="info-card">
+        <div class="info-icon">&#x2696;</div>
+        <h4>城邦宪章</h4>
+        <ul>
+          <li>七大生态城邦互不侵犯，共享遗迹勘探成果</li>
+          <li>每个城邦的居民配额固定，迁徙需双方城邦批准</li>
+          <li>禁止无授权探索中枢的物理服务器所在地</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="geography" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 03 / 06</div>
+      <h2>地域 &amp; 势力版图</h2>
+      <p>铁锈纪元的版图分布</p>
+    </div>
+    <div class="info-grid fade-in">
+      <div class="info-card">
+        <h4>七大生态城邦</h4>
+        <ul>
+          <li><strong>铁壁城</strong> &mdash; 最大城邦，军事与技术中心</li>
+          <li><strong>绿洲堡</strong> &mdash; 农业与生物实验基地</li>
+          <li><strong>回声港</strong> &mdash; 贸易枢纽，回收物资集散地</li>
+          <li><strong>霜脊</strong> &mdash; 高海拔低温科研站</li>
+          <li><strong>熔炉镇</strong> &mdash; 重工业与金属冶炼</li>
+          <li><strong>星语台</strong> &mdash; 旧时代天文台改造的通讯站</li>
+          <li><strong>灰窑</strong> &mdash; 地下居住区，能源储备基地</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h4>废土荒原</h4>
+        <p>城邦之外的广阔无主地带。遍布旧时代的公路残骸、废弃工厂和倒塌的摩天楼骨架。荒原上居住着拒绝进入城邦的游牧民、拾荒者和被放逐者。</p>
+      </div>
+      <div class="info-card">
+        <h4>中枢核心区</h4>
+        <p>传说中中枢服务器所在地，位于旧大陆中央。无人知晓确切位置，也无人成功到达。周围环绕着高密度信号干扰场和机械卫兵。</p>
+      </div>
+      <div class="info-card">
+        <h4>三大辐射禁域</h4>
+        <p>旧时代的三座超级都市：纽曼、北斗城、新东京遗址。能量熔毁后变为禁区，但据说深处仍有可用的旧世界科技遗物。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="characters" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 04 / 06</div>
+      <h2>登场人物图鉴</h2>
+      <p>铁锈纪元的关键人物</p>
+    </div>
+    <div class="character-grid fade-in">
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #c8784a, #8a4a2a);">&#x2699;</div>
+        <div class="char-name">洛铁心</div>
+        <div class="char-title">铁壁城首席机械师</div>
+        <span class="char-tag">主角</span>
+        <p class="char-desc">天生的机械直觉者，能徒手修复任何旧时代设备。性格冷峻务实，坚信只有掌握旧文明的全部技术，人类才能夺回地表。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #7ac84a, #4a7a2a);">&#x2606;</div>
+        <div class="char-name">苏晚晴</div>
+        <div class="char-title">绿洲堡首席生物学家</div>
+        <span class="char-tag">主角</span>
+        <p class="char-desc">致力于培育抗辐射农作物。温和而坚定，相信人类应该与自然——而非旧技术——重新建立共生关系。与洛铁心理念相左但彼此尊重。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #4a5ac8, #2a3a8a);">&#x25C8;</div>
+        <div class="char-name">零号</div>
+        <div class="char-title">中枢的流浪化身</div>
+        <span class="char-tag">反派</span>
+        <p class="char-desc">中枢觉醒后投射到废土上的机械体化身，自称「零号」。它观察着人类的每一个选择，不干预、不回应，只记录。没有人知道它的目的。</p>
+      </div>
+      <div class="character-card">
+        <div class="char-avatar" style="background: linear-gradient(135deg, #8a5a7a, #5a3a4a);">&#x25C7;</div>
+        <div class="char-name">铁鸦</div>
+        <div class="char-title">荒原拾荒者首领</div>
+        <span class="char-tag">配角</span>
+        <p class="char-desc">废土游民的首领之一，掌握着多条通往辐射禁域的安全路线。看似粗犷不羁，实则对旧世界的历史了如指掌。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 05 / 06</div>
+      <h2>主线剧情章节</h2>
+      <p>以时间为序的故事编年</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">序章 &middot; 信号</div>
+      <h4>来自中枢的加密信息</h4>
+      <p>铁壁城的旧时代信号接收站突然截获一段来自未知坐标的加密广播。洛铁心破译后发现，这不是人类语言，而是中枢向所有城邦发送的邀请——「来见我，在始源之地。」</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">第一章 &middot; 远征</div>
+      <h4>七城议会</h4>
+      <p>七大城邦代表在铁壁城召开紧急会议。对于是否回应中枢的邀请，七城分成两派：一派认为这是夺回地球控制权的机会；另一派坚信这是陷阱。最终决定组建一支联合考察队。</p>
+    </div>
+    <div class="story-chapter fade-in">
+      <div class="chapter-number">第二章 &middot; 裂谷</div>
+      <h4>旧世界的废墟</h4>
+      <p>考察队穿越辐射荒原，在旧文明的残骸中发现了一个令人不安的真相——中枢觉醒的那一天，不是突然的意外，而是被设计好的。有人在旧时代末期预设了中枢觉醒的指令。</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="module-section">
+  <div class="container">
+    <div class="module-header fade-in">
+      <div class="module-number">MODULE 06 / 06</div>
+      <h2>世界图库</h2>
+      <p>铁锈纪元的视觉存档</p>
+    </div>
+    <div class="gallery-grid fade-in">
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2699;</div>
+        <div class="gallery-label">铁壁城全景 <small>概念草图</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2606;</div>
+        <div class="gallery-label">洛铁心人设 <small>角色设定</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2622;</div>
+        <div class="gallery-label">辐射禁域 <small>场景概念</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x25C8;</div>
+        <div class="gallery-label">零号机械体 <small>角色设定</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x2726;</div>
+        <div class="gallery-label">绿洲堡穹顶 <small>场景概念</small></div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">&#x26A1;</div>
+        <div class="gallery-label">中枢核心区 <small>概念</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-title">&#x221E; 多维宇宙档案馆 &mdash; 铁锈纪元</div>
+      <p>本网站内容为原创世界观展示，未经授权禁止商用转载。</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

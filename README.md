@@ -16,9 +16,9 @@
 
 ## GitHub Pages 正式链接
 
-*（完成部署后填写）*
+https://emily-qing.github.io/OC-example/
 
-https://emily-qing.github.io/multiverse-archive/
+https://emily-qing.github.io/OC-example/
 
 ## 本地预览
 
@@ -27,3 +27,4 @@ https://emily-qing.github.io/multiverse-archive/
 ## 隐私说明
 
 本仓库不包含密钥、API Token 或私人数据。所有角色和故事内容均为原创。
+
